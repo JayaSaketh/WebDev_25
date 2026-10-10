@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    color:rgb(0, 200, 255);
+}
+.nav {
+  padding: 15px 5px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgb(72, 245, 245);
+}
+
+.nav a {
+    padding:0 15px;
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+.nav a:hover {
+  color: rgb(220, 78, 17);
+  text-decoration: underline;
+}
+
+.nav a:active {
+  opacity: 0.5;
+}
