@@ -17,3 +17,17 @@ function toggle(){
     document.getElementById("gender").innerText=users[index].gender;
     document.getElementById("photo").src=users[index].pic;
 }
+function randomToggle(){
+    fetch("https://randomuser.me/api").then(function(data){
+        return data.json();
+    }).then(function(jsondata){
+        var randomUser= jsondata.results[0];
+        var fullName=randomUser.name.title+" "+randomUser.name.first+" "+randomUser.name.last;
+        var gender=randomUser.gender;
+        var pic=randomUser.picture.large;
+        document.getElementById("name").innerText=fullName;
+        document.getElementById("gender").innerText=gender;
+        document.getElementById("photo").src=pic;
+    });
+
+}
